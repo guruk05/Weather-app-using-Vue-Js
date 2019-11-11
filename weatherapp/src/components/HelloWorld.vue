@@ -1,7 +1,7 @@
 <template>
   <div class="search">
     <h1>{{ msg }}</h1>
-    <h3>Installed CLI Plugins</h3>
+    <!-- <h3>Installed CLI Plugins</h3> -->
     
   </div>
 </template>
@@ -9,11 +9,6 @@
 <script>
 export default {
   name: 'search',
-  data () {
-    return {
-    msg: 'search',
-  }
-  }
 }
 </script>
 

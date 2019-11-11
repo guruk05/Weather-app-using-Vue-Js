@@ -4,6 +4,7 @@
     <form v-on:submit.prevent="getResult(query)">
     <input type= "text" placeholder="Enter cityname" v-model="query"/>
     </form>
+    
   </div>
 </template>
 
@@ -27,13 +28,13 @@ export default {
           .then( response => {
                 /* eslint-disable no-console */
                 const data = response.data;
-                let celsius = Math.round(parseFloat(data.main.temp) - 273.15);
-                let fahrenheit = Math.round(((parseFloat(data.main.temp) - 273.15) * 1.8) + 32);
-                let description = data.weather[0].description;
-                let country = data.sys.country;
-                let iconcode = data.weather[0].icon;
-                let iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
-                console.log(celsius);
+                // let celsius = Math.round(parseFloat(data.main.temp) - 273.15);
+                // let fahrenheit = Math.round(((parseFloat(data.main.temp) - 273.15) * 1.8) + 32);
+                // let description = data.weather[0].description;
+                // let country = data.sys.country;
+                // let iconcode = data.weather[0].icon;
+                // let iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
+                console.log(data);
                 // this.results = response 
                 // console.log(query);
                 /* eslint-enable no-console */

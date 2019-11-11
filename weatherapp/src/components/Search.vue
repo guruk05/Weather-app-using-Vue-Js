@@ -28,6 +28,7 @@ export default {
                 /* eslint-disable no-console */
                 const data = response.data;
                 let celsius = Math.round(parseFloat(data.main.temp) - 273.15);
+                // let fahrenheit = Math.round(((parseFloat(data.main.temp) - 273.15) * 1.8) + 32);
                 
                 console.log(celsius);
                 // this.results = response 

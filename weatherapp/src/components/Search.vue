@@ -17,17 +17,22 @@ export default {
   data () {
     return {
     msg: 'search',
-    query:''
+    query:'',
+    results:''
   }
   },
   methods: {
       getResult(query) {
           axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=${key}`)
           .then( response => {
-              /* eslint-disable no-console */
-console.log(response.data);
-// console.log(query);
-/* eslint-enable no-console */
+                /* eslint-disable no-console */
+                const data = response.data;
+                let celsius = Math.round(parseFloat(data.main.temp) - 273.15);
+                
+                console.log(celsius);
+                // this.results = response 
+                // console.log(query);
+                /* eslint-enable no-console */
               });
       }
   }

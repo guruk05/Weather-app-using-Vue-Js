@@ -31,7 +31,8 @@ export default {
                 let fahrenheit = Math.round(((parseFloat(data.main.temp) - 273.15) * 1.8) + 32);
                 let description = data.weather[0].description;
                 let country = data.sys.country;
-                
+                let iconcode = data.weather[0].icon;
+                let iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
                 console.log(celsius);
                 // this.results = response 
                 // console.log(query);

@@ -16,7 +16,7 @@ export default {
   },
   methods: {
       getResult(query) {
-          
+          alert(query);
       }
   }
 }

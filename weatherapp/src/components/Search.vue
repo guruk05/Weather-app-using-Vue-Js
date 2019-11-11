@@ -8,6 +8,10 @@
 </template>
 
 <script>
+import axios from 'axios';
+let cityName = "chennai";
+const key = "2ebbc925a11c3ea05fe72bb48f8ad49d";
+
 export default {
   name: 'HelloWorld',
   data () {
@@ -18,7 +22,13 @@ export default {
   },
   methods: {
       getResult(query) {
-          alert(query);
+          axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${key}`)
+          .then( response => {
+              /* eslint-disable no-console */
+console.log(response.data);
+console.log(query);
+/* eslint-enable no-console */
+              });
       }
   }
 }

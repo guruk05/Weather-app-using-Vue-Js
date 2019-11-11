@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
-    <form >
+    <form v-on:submit.prevent="getResult(query)">
+    <input type= "text" v-model="query"/>
     </form>
   </div>
 </template>

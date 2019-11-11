@@ -15,6 +15,9 @@ export default {
   }
   },
   methods: {
+      getResult(query) {
+          
+      }
   }
 }
 </script>

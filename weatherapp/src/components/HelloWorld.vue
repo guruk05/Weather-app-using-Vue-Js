@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="search">
     <h1>{{ msg }}</h1>
     <h3>Installed CLI Plugins</h3>
     

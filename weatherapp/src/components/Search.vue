@@ -17,7 +17,7 @@ export default {
   data () {
     return {
     msg: 'search',
-    query:'guru'
+    query:''
   }
   },
   methods: {

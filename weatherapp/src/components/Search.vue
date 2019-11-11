@@ -30,6 +30,7 @@ export default {
                 let celsius = Math.round(parseFloat(data.main.temp) - 273.15);
                 let fahrenheit = Math.round(((parseFloat(data.main.temp) - 273.15) * 1.8) + 32);
                 let description = data.weather[0].description;
+                let country = data.sys.country;
                 
                 console.log(celsius);
                 // this.results = response 

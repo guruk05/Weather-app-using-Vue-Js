@@ -1,7 +1,8 @@
 <template>
   <div class="hello">
+      <h2>Find Weather</h2>
     <form v-on:submit.prevent="getResult(query)">
-    <input type= "text" v-model="query"/>
+    <input type= "text" placeholder="Enter cityname" v-model="query"/>
     </form>
   </div>
 </template>
@@ -12,6 +13,7 @@ export default {
   data () {
     return {
     msg: 'search',
+    query:'guru'
   }
   },
   methods: {

@@ -8,9 +8,11 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
+  name: 'search',
+  data () {
+    return {
+    msg: 'search',
+  }
   }
 }
 </script>

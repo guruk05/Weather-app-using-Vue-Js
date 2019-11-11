@@ -9,7 +9,7 @@
 
 <script>
 import axios from 'axios';
-let cityName = "chennai";
+// let cityName = "chennai";
 const key = "2ebbc925a11c3ea05fe72bb48f8ad49d";
 
 export default {
@@ -22,11 +22,11 @@ export default {
   },
   methods: {
       getResult(query) {
-          axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${key}`)
+          axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=${key}`)
           .then( response => {
               /* eslint-disable no-console */
 console.log(response.data);
-console.log(query);
+// console.log(query);
 /* eslint-enable no-console */
               });
       }

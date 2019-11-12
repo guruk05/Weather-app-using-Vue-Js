@@ -37,6 +37,7 @@ export default {
     country:'',
     celsius: '',
     fahrenheit:'',
+    climate:'',
     
   }
   },

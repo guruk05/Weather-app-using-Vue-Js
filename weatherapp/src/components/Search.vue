@@ -61,6 +61,7 @@ export default {
                 this.city = city;
                 this.country = country;
                 this.climate = description;
+                this.icon = iconurl;
                 
                 // this.results = response 
                 // console.log(this.$refs.dsDegree.celsius)

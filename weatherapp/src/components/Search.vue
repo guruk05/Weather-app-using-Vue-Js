@@ -38,6 +38,7 @@ export default {
     celsius: '',
     fahrenheit:'',
     climate:'',
+    icon:'',
     
   }
   },

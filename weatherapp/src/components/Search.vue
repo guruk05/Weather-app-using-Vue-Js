@@ -1,10 +1,13 @@
 <template>
-  <div class="hello">
+<div>
       <h2>Find Weather</h2>
     <form v-on:submit.prevent="getResult(query)">
     <input type= "text" placeholder="Enter cityname" v-model="query"/>
-    </form>
-    
+     </form>
+ 
+         <h3 class="city" id="showCity" ref="showCity">{{city}}</h3>, <h3 class="state" id='showCountry' ref="showCountry" nbsp>{{country}}
+            </h3>
+           
   </div>
 </template>
 
@@ -19,7 +22,7 @@ export default {
     return {
     msg: 'search',
     query:'',
-    results:''
+ 
   }
   },
   methods: {
@@ -28,22 +31,22 @@ export default {
           .then( response => {
                 /* eslint-disable no-console */
                 const data = response.data;
-                // let celsius = Math.round(parseFloat(data.main.temp) - 273.15);
-                // let fahrenheit = Math.round(((parseFloat(data.main.temp) - 273.15) * 1.8) + 32);
-                // let description = data.weather[0].description;
-                // let country = data.sys.country;
-                // let iconcode = data.weather[0].icon;
-                // let iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
-                console.log(data);
+                // this.showCelsius(data);
+              
                 // this.results = response 
+                // console.log(this.$refs.dsDegree.celsius)
                 // console.log(query);
                 /* eslint-enable no-console */
               });
+              },
+               showCelsius(data) {
+                 
+              }
       }
-  }
-}
-</script>
 
+  }
+
+</script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h3 {

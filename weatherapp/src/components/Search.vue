@@ -12,7 +12,9 @@
                 <!-- <span class="dtTime">8:00 am</span> -->
                 <!-- </div> -->
                 <div class = "icon" > <img id="weatherIcon" v-bind:src="icon" alt="Weather icon"> </div>
-                 
+                 <div class="weather" id="showDescription" ref="showDescription" >{{climate}}</div>
+                <br>
+                
         </div>
   </div>
 </template>

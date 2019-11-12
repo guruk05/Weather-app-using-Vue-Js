@@ -15,6 +15,7 @@
                  <div class="weather" id="showDescription" ref="showDescription" >{{climate}}</div>
                 <br>
                 <div class="degreeSec">
+                <div class="dsDegree" id="showDegree" ref="dsDegree">{{degree}}</div>
                 
              <!-- <div class="Celsius" id="showFahrenheit" ref="showFahrenheit" >{{fahrenheit}}&deg;C </div> -->
             <!-- <span>|</span> -->

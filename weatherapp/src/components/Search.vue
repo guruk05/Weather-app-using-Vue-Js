@@ -57,7 +57,8 @@ export default {
                 let iconcode = data.weather[0].icon;
                 let iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
                 this.celsius = celsius;
-               
+                this.fahrenheit = fahrenheit;
+                
                 // this.results = response 
                 // console.log(this.$refs.dsDegree.celsius)
                 // console.log(query);

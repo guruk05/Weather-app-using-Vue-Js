@@ -58,6 +58,7 @@ export default {
                 let iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
                 this.celsius = celsius;
                 this.fahrenheit = fahrenheit;
+                this.city = city;
                 
                 // this.results = response 
                 // console.log(this.$refs.dsDegree.celsius)

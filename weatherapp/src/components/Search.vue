@@ -7,7 +7,13 @@
  
          <h3 class="city" id="showCity" ref="showCity">{{city}}</h3>, <h3 class="state" id='showCountry' ref="showCountry" nbsp>{{country}}
             </h3>
-           
+             <!-- <div class="DateTime"> -->
+               <!-- <span class="dtDay">Friday</span> -->
+                <!-- <span class="dtTime">8:00 am</span> -->
+                <!-- </div> -->
+                <div class = "icon" > <img id="weatherIcon" v-bind:src="icon" alt="Weather icon"> </div>
+                 
+        </div>
   </div>
 </template>
 

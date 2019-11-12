@@ -54,6 +54,7 @@ export default {
                 let city = data.name;
                 let country = data.sys.country;
                 let description = data.weather[0].description;
+                let iconcode = data.weather[0].icon;
                 
                 // this.results = response 
                 // console.log(this.$refs.dsDegree.celsius)

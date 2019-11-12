@@ -39,7 +39,7 @@ export default {
     fahrenheit:'',
     climate:'',
     icon:'',
-    
+    degree:''
   }
   },
   methods: {

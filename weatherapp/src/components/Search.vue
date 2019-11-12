@@ -60,6 +60,7 @@ export default {
                 this.fahrenheit = fahrenheit;
                 this.city = city;
                 this.country = country;
+                this.climate = description;
                 
                 // this.results = response 
                 // console.log(this.$refs.dsDegree.celsius)

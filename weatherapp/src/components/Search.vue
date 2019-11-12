@@ -36,6 +36,7 @@ export default {
     city:'',
     country:'',
     celsius: '',
+    fahrenheit:'',
     
   }
   },

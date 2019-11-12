@@ -33,7 +33,8 @@ export default {
     return {
     msg: 'search',
     query:'',
- 
+    city:'',
+    
   }
   },
   methods: {

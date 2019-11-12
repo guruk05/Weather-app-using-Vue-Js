@@ -53,6 +53,7 @@ export default {
                 let fahrenheit = Math.round(((parseFloat(data.main.temp) - 273.15) * 1.8) + 32);
                 let city = data.name;
                 let country = data.sys.country;
+                let description = data.weather[0].description;
                 
                 // this.results = response 
                 // console.log(this.$refs.dsDegree.celsius)

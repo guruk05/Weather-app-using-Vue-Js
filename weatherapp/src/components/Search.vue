@@ -49,7 +49,7 @@ export default {
                 /* eslint-disable no-console */
                 const data = response.data;
                 // this.showCelsius(data);
-              
+                let celsius = Math.round(parseFloat(data.main.temp) - 273.15);
                 // this.results = response 
                 // console.log(this.$refs.dsDegree.celsius)
                 // console.log(query);

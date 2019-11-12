@@ -34,6 +34,7 @@ export default {
     msg: 'search',
     query:'',
     city:'',
+    country:'',
     
   }
   },

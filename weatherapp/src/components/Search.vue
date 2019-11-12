@@ -15,8 +15,8 @@
                  <div class="weather" id="showDescription" ref="showDescription" >{{climate}}</div>
                 <br>
                 <div class="degreeSec">
-                <div v-on:click="this.showCelsius()" class="dsDegree" id="showDegree" ref="dsDegree">{{celsius}} {{convfahrenheit}}&deg;C </div>
-             <div class="Celsius" id="showFahrenheit" ref="showFahrenheit" >{{fahrenheit}}&deg;C </div>
+                
+             <!-- <div class="Celsius" id="showFahrenheit" ref="showFahrenheit" >{{fahrenheit}}&deg;C </div> -->
             <!-- <span>|</span> -->
         </div>
   </div>
@@ -39,7 +39,7 @@ export default {
     fahrenheit:'',
     climate:'',
     icon:'',
-    convfahrenheit:'',
+    
   }
   },
   methods: {
@@ -57,20 +57,33 @@ export default {
                 let iconcode = data.weather[0].icon;
                 let iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
                 this.celsius = celsius;
+                this.degree = this.celsius;
                 this.fahrenheit = fahrenheit;
                 this.city = city;
                 this.country = country;
                 this.climate = description;
                 this.icon = iconurl;
-                
+                console.log(iconurl);
                 // this.results = response 
                 // console.log(this.$refs.dsDegree.celsius)
                 // console.log(query);
                 /* eslint-enable no-console */
               });
               },
-               showCelsius(data) {
-                 
+               showCelsius() {
+                 /* eslint-disable no-console */
+                 console.log("fahrenheit");
+                 // let fahrenheit = Math.round(((parseFloat(data.main.temp) - 273.15) * 1.8) + 32);
+                this.degree = this.celsius;
+                /* eslint-enable no-console */
+
+              },
+              showFahrenheit() {
+                this.degree = this.fahrenheit;
+                 /* eslint-disable no-console */
+                 console.log("dblclicked");
+                //  console.log(x);
+                /* eslint-enable no-console */
               }
       }
 

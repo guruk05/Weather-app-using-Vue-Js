@@ -17,7 +17,7 @@
                 <div class="degreeSec">
                 <div class="dsDegree" id="showDegree" ref="dsDegree">{{degree}}</div>
                 <div v-on:click="showCelsius()">&deg;C</div>
-                <div >&deg;F</div>
+                <div v-on:click="showFahrenheit()">&deg;F</div>
              <!-- <div class="Celsius" id="showFahrenheit" ref="showFahrenheit" >{{fahrenheit}}&deg;C </div> -->
             <!-- <span>|</span> -->
         </div>

@@ -7,4 +7,4 @@ Vue Js
 
 # Author
 
-Guru Prasath
+ #### <a href="https://github.com/guruk05">Guru Prasath</a>

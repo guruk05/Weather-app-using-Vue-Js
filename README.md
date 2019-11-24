@@ -5,3 +5,6 @@ Weather App Using Vue Js and OpenWeatherMap Api.
 
 Vue Js 
 
+# Author
+
+Guru Prasath.k

@@ -7,4 +7,4 @@ Vue Js
 
 # Author
 
-Guru Prasath.k
+Guru Prasath

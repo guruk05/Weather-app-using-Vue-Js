@@ -1,27 +1,26 @@
 <template>
   <div id="app">
-    <search/>
-    <HelloWorld/>
+    <search />
+    <HelloWorld />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import Search from './components/Search.vue'
-
+import HelloWorld from "./components/HelloWorld.vue";
+import Search from "./components/Search.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
     Search,
     HelloWorld
   }
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

@@ -1,9 +1,10 @@
-# Weather-app-using-Vue-Js
-Weather App Using Vue Js and OpenWeatherMap Api.
+# Vue Js - Weather App
+A web based weather Application developed to learn and practice Vue Js framework.
+This Application uses openweather map api to fetch weather details of various cities.
 
 # Built With
 
-Vue Js 
+* #### <a href="https://vuejs.org/">Vue Js</a>
 
 # Author
 
